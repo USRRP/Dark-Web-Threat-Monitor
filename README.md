@@ -1,14 +1,8 @@
-# 🕵️ Dark Web Threat Monitor
+## Dark Web Threat Monitor
 
-A cybersecurity-focused project that scrapes `.onion` dark web sites through the Tor network, scans for sensitive keywords (e.g., leaks, credentials, confidential data), and logs threat intelligence alerts in a local SQLite database — all accessible through a user-friendly Streamlit dashboard.
+A cybersecurity mini-project to scrape `.onion` sites over the Tor network, analyze page content for sensitive keywords (e.g., credentials, leaks), and store alerts in a SQLite database. Includes a Streamlit dashboard for interactive use.
 
-This project is designed as a **practical mini-NIDS (Network Intrusion Detection System)** component for use in **SOC operations, Incident Response, Threat Intelligence, and Audit & Compliance** research.
-
-🚨 Built for educational and ethical research purposes only.
-
----
-
-## 📌 Features
+# Features
 
 - 🔍 Custom user input for .onion URLs
 - 🕸️ Multi-page crawling across internal links
@@ -17,7 +11,33 @@ This project is designed as a **practical mini-NIDS (Network Intrusion Detection
 - 📊 Streamlit dashboard to run analysis and view alerts
 - 🛠️ Easily extendable for enrichment (e.g., scoring, integration with SIEM)
 
----
+  
+# Setup
+
+1. Install Tor and run the daemon:
+   ```
+   sudo apt install tor
+   sudo service tor start
+   ```
+
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Launch the dashboard:
+   ```
+   streamlit run dashboard.py
+   ```
+
+**Note**: For ethical, legal use only. Avoid scraping login-protected or illicit content.
+
+A cybersecurity-focused project that scrapes `.onion` dark web sites through the Tor network, scans for sensitive keywords (e.g., leaks, credentials, confidential data), and logs threat intelligence alerts in a local SQLite database — all accessible through a user-friendly Streamlit dashboard.
+
+This project is designed as a **practical mini-NIDS (Network Intrusion Detection System)** component for use in **SOC operations, Incident Response, Threat Intelligence, and Audit & Compliance** research.
+
+🚨 Built for educational and ethical research purposes only.
+
 
 ## 💡 Why This Project Matters
 
