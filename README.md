@@ -1,4 +1,8 @@
-## Dark Web Threat Monitor
+## Dark Web Threat Monitor 
+![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Platform](https://img.shields.io/badge/platform-Streamlit-orange.svg)
+
 
 A cybersecurity mini-project to scrape `.onion` sites over the Tor network, analyze page content for sensitive keywords (e.g., credentials, leaks), and store alerts in a SQLite database. Includes a Streamlit dashboard for interactive use.
 
